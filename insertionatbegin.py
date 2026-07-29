@@ -8,5 +8,5 @@ class Solution:
     def insertAtHead(self, head, X):
         newnode=ListNode(X)
         newnode.next=head
-        head=X
+        head=newnode
         return head
