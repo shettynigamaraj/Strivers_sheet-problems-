@@ -5,14 +5,8 @@
 #         self.next = next
 
 class Solution:
-    def deleteHead(self, head):
-        #your code goes here
-        if head==None:
-            return None 
-        temp=head.next
-        head.next=None
-        head=temp
+    def insertAtHead(self, head, X):
+        newnode=ListNode(X)
+        newnode.next=head
+        head=X
         return head
-      '''Input: linkedList = [1, 2, 3], X = 7
-
-Output: [7, 1, 2, 3]'''
